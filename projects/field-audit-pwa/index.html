@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#10252b">
+  <title>FieldAudit | Inspecciones de campo</title>
+  <link rel="manifest" href="./manifest.webmanifest">
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+  <header class="topbar">
+    <div><span class="eyebrow">OPERACIONES · AUDITORÍA</span><h1>FieldAudit</h1></div>
+    <div id="connection" class="connection" role="status">Comprobando conexión…</div>
+  </header>
+  <main class="layout">
+    <section class="panel form-panel">
+      <div class="section-heading"><div><span class="eyebrow">NUEVO REGISTRO</span><h2>Inspección de sitio</h2></div></div>
+      <form id="inspection-form">
+        <label>Sitio o sucursal<input name="site" required maxlength="80" placeholder="Ej. Sucursal Centro"></label>
+        <label>Inspector<input name="inspector" required maxlength="60" placeholder="Nombre del responsable"></label>
+        <label>Tipo de revisión
+          <select name="area" required>
+            <option value="">Selecciona un área</option><option>Seguridad</option><option>Equipos</option>
+            <option>Apertura</option><option>Inventario</option>
+          </select>
+        </label>
+        <fieldset><legend>Hallazgos</legend>
+          <label class="check"><input type="checkbox" name="finding" value="Limpieza pendiente">Limpieza pendiente</label>
+          <label class="check"><input type="checkbox" name="finding" value="Equipo requiere mantenimiento">Equipo requiere mantenimiento</label>
+          <label class="check"><input type="checkbox" name="finding" value="Ruta de evacuación obstruida">Ruta de evacuación obstruida</label>
+        </fieldset>
+        <label>Notas<textarea name="notes" rows="3" maxlength="500" placeholder="Describe lo necesario para dar seguimiento"></textarea></label>
+        <button class="primary" type="submit">Guardar inspección</button>
+      </form>
+    </section>
+    <section class="panel records-panel">
+      <div class="section-heading"><div><span class="eyebrow">DISPOSITIVO ACTUAL</span><h2>Registros recientes</h2></div>
+        <button id="export" class="secondary" type="button">Exportar JSON</button>
+      </div>
+      <p id="queue-note" class="muted"></p>
+      <div id="records" class="records" aria-live="polite"></div>
+    </section>
+  </main>
+  <script src="./app.js"></script>
+</body>
+</html>

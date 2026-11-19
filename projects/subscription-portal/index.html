@@ -1,0 +1,9 @@
+<!doctype html><html lang="es"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Subscription Portal</title><link rel="stylesheet" href="./styles.css"></head>
+<body><header><div><span class="eyebrow">BILLING OPERATIONS</span><h1>Subscription Portal</h1></div><span class="mode">DEMO · SIN COBROS</span></header>
+<main><section class="account"><div><span class="label">CUENTA</span><h2>Northstar Logistics</h2><p>Contrato anual · próxima renovación 19 dic 2026</p></div><div class="account-id">ACC-2048</div></section>
+<div class="layout"><section class="panel"><span class="eyebrow">CAMBIO DE PLAN</span><h2>Previsualiza el ajuste</h2>
+<label>Plan<select id="plan"><option value="starter">Starter · R$ 89 por licencia/mes</option><option value="growth">Growth · R$ 149 por licencia/mes</option><option value="scale">Scale · R$ 229 por licencia/mes</option></select></label>
+<label>Licencias activas<input id="seats" type="number" min="1" max="500" value="12"></label>
+<label>Días restantes del ciclo<input id="days" type="number" min="0" max="30" value="12"></label>
+<button id="confirm" class="primary">Confirmar cambio de demostración</button><p id="status" role="status"></p></section>
+<aside class="panel"><span class="eyebrow">RESUMEN DE FACTURACIÓN</span><div id="summary"></div><p class="fine">El cargo mostrado es una simulación. No se conecta con una pasarela de pago.</p></aside></div></main><script src="./app.js"></script></body></html>

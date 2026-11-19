@@ -1,0 +1,9 @@
+{
+  "name": "FieldAudit Inspecciones",
+  "short_name": "FieldAudit",
+  "start_url": "./",
+  "display": "standalone",
+  "background_color": "#f2f6f5",
+  "theme_color": "#10252b",
+  "icons": []
+}

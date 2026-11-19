@@ -1,0 +1,5 @@
+<!doctype html><html lang="es"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Shipment Tracking</title><link rel="stylesheet" href="./styles.css"></head>
+<body><header><div><span class="eyebrow">DISTRIBUCIÓN · CONTROL DE TURNO</span><h1>Shipment Tracking</h1></div><div class="date" id="today"></div></header>
+<main><section class="metrics"><article><span>EN RUTA</span><strong id="metric-route">0</strong></article><article><span>DEMORADOS</span><strong id="metric-delayed">0</strong></article><article><span>ENTREGADOS HOY</span><strong id="metric-delivered">0</strong></article></section>
+<section class="toolbar"><input id="search" placeholder="Buscar guía, orden o destino" aria-label="Buscar envíos"><select id="status"><option value="all">Todos los estados</option><option>Preparando</option><option>En ruta</option><option>Demorado</option><option>Entregado</option></select><span id="result-count"></span></section>
+<section id="shipments" class="grid" aria-live="polite"></section><aside id="detail" class="detail" hidden></aside></main><script src="./app.js"></script></body></html>

@@ -1,0 +1,6 @@
+[
+  {"tracking":"BR-88421","order":"SO-1138","destination":"Chapecó, SC","status":"En ruta","eta":"2026-11-19T16:30:00-03:00","delayed":false,"events":[{"label":"Pedido preparado","time":"2026-11-19T08:20:00-03:00"},{"label":"Salió del centro de distribución","time":"2026-11-19T10:05:00-03:00"},{"label":"En tránsito a Chapecó","time":"2026-11-19T13:10:00-03:00"}]},
+  {"tracking":"BR-88422","order":"SO-1140","destination":"Joinville, SC","status":"Demorado","eta":"2026-11-19T18:40:00-03:00","delayed":true,"events":[{"label":"Pedido preparado","time":"2026-11-19T07:45:00-03:00"},{"label":"Retenido en clasificación","time":"2026-11-19T11:30:00-03:00"}]},
+  {"tracking":"BR-88423","order":"SO-1145","destination":"Curitiba, PR","status":"Preparando","eta":"2026-11-20T09:00:00-03:00","delayed":false,"events":[{"label":"Pedido recibido","time":"2026-11-19T14:20:00-03:00"}]},
+  {"tracking":"BR-88418","order":"SO-1129","destination":"Erechim, RS","status":"Entregado","eta":"2026-11-19T11:15:00-03:00","delayed":false,"events":[{"label":"En ruta","time":"2026-11-19T08:10:00-03:00"},{"label":"Entregado en recepción","time":"2026-11-19T11:12:00-03:00"}]}
+]

@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="es">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Commerce Checkout</title><link rel="stylesheet" href="./styles.css"></head>
+<body>
+<header><a class="brand" href="#">NORTE / SUPPLY</a><span>Checkout seguro · Modo de demostración</span></header>
+<main>
+<section class="intro"><p class="eyebrow">EQUIPAMIENTO PARA EQUIPOS</p><h1>Prepara el pedido de tu sucursal</h1><p>Precios transparentes y una revisión final antes de confirmar.</p></section>
+<div class="columns">
+<section><div id="products" class="products"></div></section>
+<aside>
+<section class="card"><h2>Tu pedido</h2><div id="cart" class="cart"></div>
+<label for="coupon">Código de descuento</label><div class="coupon"><input id="coupon" placeholder="FIELD10"><button id="apply-coupon" type="button">Aplicar</button></div>
+<div id="totals" class="totals"></div></section>
+<section class="card"><h2>Entrega y pago</h2><form id="checkout">
+<label>Nombre de contacto<input name="contact" required autocomplete="name"></label>
+<label>Correo de pedido<input name="email" type="email" required autocomplete="email"></label>
+<label>Dirección de entrega<input name="address" required autocomplete="street-address"></label>
+<label>Ciudad<input name="city" required autocomplete="address-level2"></label>
+<button class="primary" type="submit">Confirmar pedido de prueba</button>
+<p class="fine">No se realiza ningún cobro real. Datos de demostración únicamente.</p>
+</form><div id="receipt" role="status"></div></section>
+</aside></div>
+</main><script src="./app.js"></script>
+</body></html>
