@@ -10,6 +10,11 @@ Portafolio de herramientas web y Node.js en **JavaScript**. Cada solución cubre
 | Webhook Observatory | Inspección segura y replay local de webhooks | Node.js |
 | Shipment Tracking | Seguimiento operativo de envíos | Dashboard web |
 | Subscription Portal | Cambios de plan y prorrateo | Aplicación web |
+| Regional Ops Dashboard | Panel regional con prioridades de reorden | React + TypeScript + REST |
+
+## Ejecutar Regional Ops Dashboard
+
+Entra en projects/regional-ops-dashboard y ejecuta npm install y npm run dev. El panel funciona con datos ficticios y permite conectarse a Inventory Control API.
 
 ## Automatización
 
